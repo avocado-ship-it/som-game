@@ -12,6 +12,36 @@ export const load = {
 
         loadSprite("forest-background", "./assets/Forest_Background_0.png"),
         loadSprite("logo", "./assets/Logo.png")
+        loadSprite("grass-tileset", "./assets/Grass_Tileset.png", {
+            sliceX: 3,
+            sliceY: 4,
+            anims: {
+                tm: 1,
+                tr: 2,
+                ml: 3,
+                mm: 4,
+                mr: 5,
+                bl: 6,
+                bm: 7,
+                br: 8,
+            }
+        })
+        loadSprite("grass-oneway-tileset", "./assets/Grass_Oneway.png", {
+            sliceX: 3,
+            sliceY: 4,
+            anims: {
+            tl: 0,
+            tm: 1,
+            tr: 2,
+            ml: 3,
+            mm: 4,
+            mr: 5,
+            bl: 6,
+            bm: 7,
+            br: 8,
+      },
+    })
+
     },
     
     sounds: () => {
